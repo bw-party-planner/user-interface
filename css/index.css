@@ -72,7 +72,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -181,10 +180,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
 html {
   font-size: 62.5%;
 }
@@ -209,10 +204,12 @@ h3 {
   font-family: "Anton", sans-serif;
   font-size: 2rem;
 }
-p,
-a {
+p {
   font-size: 1.6rem;
   line-height: 1.4;
+  text-decoration: none;
+}
+a {
   text-decoration: none;
 }
 .container {
@@ -222,9 +219,10 @@ a {
 }
 .navigation-bar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background: #000;
-  margin: 0 0 2% 0;
+  margin: 0 0 2% auto;
+  width: 100%;
 }
 .navigation-bar h1 {
   font-family: "Anton", sans-serif;
@@ -238,26 +236,38 @@ a {
     text-align: center;
   }
 }
-.navigation-bar .nav-links {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  padding: 1%;
-}
-@media (max-width: 600px) {
-  .navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-.logo {
+.navigation-bar h1 .logo {
   cursor: hand;
   cursor: pointer;
 }
-header {
-  background-image: url("concert.jpg");
+.navigation-bar span {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+@media (max-width: 600px) {
+  .navigation-bar span {
+    width: 100%;
+  }
+}
+.navigation-bar nav {
+  width: 30%;
+}
+@media (max-width: 600px) {
+  .navigation-bar nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.navigation-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .navigation-bar {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 h1 {
   font-size: 5rem;
@@ -278,7 +288,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 2%;
+  padding: 2% 0;
 }
 .main-content div {
   padding: 1%;
@@ -298,53 +308,48 @@ header h1 {
 }
 .icon2 {
   color: #3a1772;
+  width: 55px;
   font-size: 5rem;
 }
 .icon2:hover {
   color: #6f5698;
 }
-.arrow {
-  text-align: right;
-}
 .copyright {
   text-align: center;
+}
+.arrow {
+  display: flex;
+  justify-content: flex-end;
 }
 .signup {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1%;
 }
 .signup h2 {
   font-family: "Anton", sans-serif;
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 2% 0;
 }
 .signup span {
   display: flex;
   justify-content: center;
-  width: 150px;
 }
 .bottom-content {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 2% 0;
 }
 .bottom-content div {
-  margin: 1%;
-  padding: 2%;
+  margin: 1% 1%;
 }
 .bottom-content div h2 {
   font-family: "Anton", sans-serif;
   border-bottom: 3px solid #3a1772;
 }
 .bottom-content div p {
-  padding: 2%;
-}
-.bottom-content div span {
-  display: flex;
-  width: 55px;
+  padding: 2% 0;
 }
 @media (max-width: 600px) {
   .bottom-content {
@@ -376,10 +381,39 @@ header h1 {
 }
 .team-content span {
   display: flex;
-  width: 55px;
+  max-width: 10%;
 }
-.arrow2 {
-  text-align: center;
+.social-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.social-content div {
+  margin: 1%;
+  padding: 2%;
+}
+.social-content div h2 {
+  font-family: "Anton", sans-serif;
+  border-bottom: 3px solid #3a1772;
+}
+.social-content div p {
+  padding: 2%;
+}
+@media (max-width: 600px) {
+  .social-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.social-content p {
+  display: flex;
+  justify-content: center;
+}
+.social-content span {
+  display: flex;
+  justify-content: center;
 }
 footer {
   display: flex;
@@ -394,7 +428,6 @@ footer {
 footer .bottom-navbar {
   justify-content: center;
   text-align: center;
-  padding: 2%;
 }
 footer .bottom-navbar p,
 footer .bottom-navbar a {
@@ -408,10 +441,10 @@ footer .bottom-navbar a:hover {
 }
 footer .social {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
-  padding: 0 10%;
   width: 100%;
+  padding: 1% 0;
 }
 footer .facebookIcon {
   display: flex;

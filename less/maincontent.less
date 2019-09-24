@@ -1,7 +1,7 @@
 .main-content {
 	.flex-horizontal-center;
 	align-items: center;
-	padding: 2% 2%;
+	padding: 2% 0;
 	div {
 		padding: 1%;
 		h2 {
@@ -21,16 +21,18 @@
 
 .icon2 {
 	color: @purple;
+	width: 55px;
 	font-size: 5rem;
 	&:hover {
 		color: #6f5698;
 	}
 }
 
-.arrow {
-	text-align: right;
-}
-
 .copyright {
 	text-align: center;
+}
+
+.arrow {
+	.flex;
+	justify-content: flex-end;
 }
