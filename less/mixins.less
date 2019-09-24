@@ -1,0 +1,61 @@
+// Mixins Here
+.flex {
+	display: flex;
+}
+
+.flex-horizontal-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.headerfont {
+	font-family: "Anton", sans-serif;
+}
+
+button {
+	.flex-horizontal-center;
+	background-color: @purple;
+	height: 30px;
+	width: 100px;
+	border-radius: 10px;
+	border: 1px solid black;
+	font-size: 1.5rem;
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	&:hover {
+		background-color: @lightpurple;
+	}
+}
+
+.button2 {
+	.flex-horizontal-center;
+	background-color: @purple;
+	height: 75px;
+	width: 150px;
+	border-radius: 50px;
+	border: 1px solid black;
+	font-size: 1.5rem;
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	&:hover {
+		background-color: @lightpurple;
+	}
+}
+
+.shadow {
+	box-shadow: 0px 0px 5px 2px #000000;
+}
