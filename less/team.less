@@ -1,9 +1,19 @@
+header {
+	h1 {
+		@media @800 {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
+
 .team-content {
 	.flex-horizontal-center;
 	div {
 		margin: 1%;
 		padding: 1%;
-		@media @mobile {
+		@media @800 {
 			width: 50%;
 			align-items: center;
 			display: flex;
@@ -18,7 +28,7 @@
 		}
 	}
 
-	@media @mobile {
+	@media @800 {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
@@ -36,9 +46,14 @@
 			border-bottom: 3px solid @purple;
 		}
 	}
-	@media @mobile {
+	@media @800 {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+	}
+	.github {
+		@media @800 {
+			display: none;
+		}
 	}
 }
