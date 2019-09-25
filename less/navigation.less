@@ -1,8 +1,9 @@
 .navigation-bar {
-	.flex;
+	.flex-horizontal-center;
+	align-items: center;
 	justify-content: space-between;
 	background: #000;
-	margin: 0 0 2% auto;
+	height: 50px;
 	width: 100%;
 	h1 {
 		.headerfont;
@@ -10,31 +11,23 @@
 		text-decoration-color: @purple;
 		font-size: 3rem;
 		color: white;
+		padding: 5%;
 		@media @mobile {
 			text-align: center;
 		}
-		.logo {
-			cursor: hand;
-			cursor: pointer;
-		}
-	}
-	span {
-		.flex;
-		justify-content: center;
-		width: 35%;
-		@media @mobile {
-			width: 100%;
-		}
 	}
 	nav {
-		width: 30%;
+		width: 25%;
+		justify-content: center;
 		@media @mobile {
 			width: 100%;
 			justify-content: center;
 		}
 	}
 	.nav-links {
-		.flex-vertical-center;
+		.flex;
+		justify-content: space-between;
+		padding: 1%;
 	}
 	@media @mobile {
 		width: 100%;
