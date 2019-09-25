@@ -3,15 +3,33 @@
 	align-items: center;
 	padding: 2% 0;
 	div {
-		padding: 1% 0;
+		padding: 1%;
 		h2 {
 			.headerfont;
 			padding-bottom: 2%;
 		}
 	}
-	@media @800 {
+	@media @820 {
 		flex-direction: column;
 		text-align: center;
+	}
+}
+
+.header-content {
+	h1 {
+		.headerfont;
+		text-decoration: underline;
+		text-decoration-color: @purple;
+		margin: 2% 0;
+		@media @820 {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	span {
+		padding: 1%;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -25,5 +43,5 @@
 }
 
 .signup {
-	margin: 10% 0;
+	margin: 3% 0;
 }

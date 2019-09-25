@@ -245,6 +245,11 @@ a:hover {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 820px) {
+  .container {
+    width: 90%;
+  }
+}
 h1 {
   font-size: 5rem;
 }
@@ -255,7 +260,6 @@ header h1 {
   font-family: "Anton", sans-serif;
   text-decoration: underline;
   text-decoration-color: #3a1772;
-  padding: 2% 0;
 }
 @media (max-width: 600px) {
   header {
@@ -302,7 +306,7 @@ header h1 {
   padding: 2% 0;
 }
 .main-content div {
-  padding: 1% 0;
+  padding: 1%;
 }
 .main-content div h2 {
   font-family: "Anton", sans-serif;
@@ -314,6 +318,23 @@ header h1 {
     text-align: center;
   }
 }
+.header-content h1 {
+  font-family: "Anton", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #3a1772;
+  margin: 2% 0;
+}
+@media (max-width: 820px) {
+  .header-content h1 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.header-content span {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
 .card {
   margin: 2%;
   width: 50%;
@@ -322,7 +343,7 @@ header h1 {
   text-align: center;
 }
 .signup {
-  margin: 10% 0;
+  margin: 3% 0;
 }
 .signup {
   display: flex;
@@ -366,6 +387,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 20%;
   }
 }
 .team-content {
