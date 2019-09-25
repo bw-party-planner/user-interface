@@ -12,6 +12,7 @@ body {
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
+	overflow-x: hidden !important;
 	.shadow;
 }
 
@@ -39,7 +40,11 @@ p {
 }
 
 a {
+	color: @purple;
 	text-decoration: none;
+	&:hover {
+		color: @lightpurple;
+	}
 }
 
 .container {
@@ -52,6 +57,7 @@ h1 {
 	font-size: 5rem;
 }
 header {
+	padding-top: 2%;
 	h1 {
 		.headerfont;
 		text-decoration: underline;
