@@ -1,0 +1,73 @@
+// * {
+// 	margin: 0 auto;
+// }
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	font-family: "Poppins", sans-serif;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden !important;
+	.shadow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Russo One", sans-serif;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-family: "Anton", sans-serif;
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	text-decoration: none;
+}
+
+a {
+	color: @purple;
+	text-decoration: none;
+	&:hover {
+		color: @lightpurple;
+	}
+}
+
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	@media @tablet {
+		width: 90%;
+	}
+}
+
+h1 {
+	font-size: 5rem;
+}
+header {
+	padding-top: 2%;
+	h1 {
+		.headerfont;
+		text-decoration: underline;
+		text-decoration-color: @purple;
+	}
+	@media @mobile {
+		flex-direction: column;
+		text-align: center;
+	}
+}

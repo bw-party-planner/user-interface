@@ -1,0 +1,54 @@
+.header-content {
+	h1 {
+		.headerfont;
+		text-decoration: underline;
+		text-decoration-color: @purple;
+		margin: 2% 0;
+		@media @tablet {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	span {
+		padding: 1%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.main-content {
+	.flex-horizontal-center;
+	align-items: center;
+	padding: 2% 0;
+	div {
+		padding: 1%;
+		h2 {
+			.headerfont;
+			padding-bottom: 2%;
+		}
+	}
+	@media @tablet {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.card {
+	margin: 2%;
+	width: 50%;
+}
+
+.signup {
+	.flex-horizontal-center;
+	flex-direction: column;
+	margin: 3% 0;
+	h2 {
+		.headerfont;
+		justify-content: center;
+		text-align: center;
+		padding: 2% 0;
+	}
+	span {
+		.flex-horizontal-center;
+	}
+}

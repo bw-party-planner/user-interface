@@ -1,0 +1,98 @@
+// Mixins Here
+.flex {
+	display: flex;
+}
+
+.flex-horizontal-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.headerfont {
+	font-family: "Anton", sans-serif;
+}
+
+.white {
+	color: #fff;
+}
+
+.arrow {
+	justify-content: flex-end;
+	display: flex;
+	@media @tablet {
+		justify-content: center;
+	}
+}
+
+button {
+	.flex-horizontal-center;
+	background-color: @purple;
+	height: 30px;
+	width: 100px;
+	border-radius: 10px;
+	border: 0;
+	font-size: 1.5rem;
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	&:hover {
+		background-color: @lightpurple;
+	}
+}
+
+.button2 {
+	.flex-horizontal-center;
+	.shadow2;
+	background-color: @purple;
+	height: 100px;
+	width: 200px;
+	border-radius: 50%;
+	border: 0;
+	font-size: 3rem;
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	&:hover {
+		background-color: @lightpurple;
+	}
+}
+
+.shadow {
+	box-shadow: 0px 0px 15px 10px #000000;
+}
+.shadow2 {
+	box-shadow: 0px 0px 5px 2px #000000;
+}
+
+.icon2 {
+	color: @purple;
+	font-size: 5rem;
+	width: 55px;
+	&:hover {
+		color: @lightpurple;
+	}
+}
+
+.icon3 {
+	color: @purple;
+	font-size: 3rem;
+	&:hover {
+		color: @lightpurple;
+	}
+}
