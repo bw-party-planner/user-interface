@@ -1,20 +1,3 @@
-.main-content {
-	.flex-horizontal-center;
-	align-items: center;
-	padding: 2% 0;
-	div {
-		padding: 1%;
-		h2 {
-			.headerfont;
-			padding-bottom: 2%;
-		}
-	}
-	@media @820 {
-		flex-direction: column;
-		text-align: center;
-	}
-}
-
 .header-content {
 	h1 {
 		.headerfont;
@@ -33,18 +16,39 @@
 	}
 }
 
+.main-content {
+	.flex-horizontal-center;
+	align-items: center;
+	padding: 2% 0;
+	div {
+		padding: 1%;
+		h2 {
+			.headerfont;
+			padding-bottom: 2%;
+		}
+	}
+	@media @820 {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
 .card {
 	margin: 2%;
 	width: 50%;
 }
 
-.copyright {
-	text-align: center;
-}
-
 .signup {
+	.flex-horizontal-center;
+	flex-direction: column;
 	margin: 3% 0;
 	h2 {
+		.headerfont;
+		justify-content: center;
 		text-align: center;
+		padding: 2% 0;
+	}
+	span {
+		.flex-horizontal-center;
 	}
 }
