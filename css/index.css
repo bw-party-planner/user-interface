@@ -21,6 +21,13 @@
 .text-center {
   text-align: center;
 }
+.white {
+  color: #fff;
+}
+.arrow {
+  justify-content: flex-end;
+  display: flex;
+}
 button {
   display: flex;
   justify-content: center;
@@ -345,6 +352,9 @@ header h1 {
 .signup {
   margin: 3% 0;
 }
+.signup h2 {
+  text-align: center;
+}
 .signup {
   display: flex;
   justify-content: center;
@@ -450,7 +460,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  height: 100px;
+  height: 150px;
   background-color: #000;
   width: 100%;
   margin-top: 2%;
@@ -458,12 +468,14 @@ footer {
 footer .bottom-navbar {
   justify-content: center;
   text-align: center;
+  font-size: 1rem;
+  padding: 2%;
 }
 footer .bottom-navbar p,
 footer .bottom-navbar a {
   font-size: 1.6rem;
   color: #fff;
-  padding: 0 2%;
+  padding: 0 1%;
 }
 footer .bottom-navbar p:hover,
 footer .bottom-navbar a:hover {
@@ -473,7 +485,7 @@ footer .social {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  width: 100%;
+  width: 50%;
   padding: 1% 0;
 }
 footer .facebookIcon {
